@@ -1,0 +1,49 @@
+const Sequelize = require('sequelize');
+const sequelize = require("./Connection")
+module.exports =  sequelize.define("Etudiants",{
+    nom:{
+        type:Sequelize.STRING
+    },
+    prenom:{
+        type:Sequelize.STRING
+    },
+    region:{
+        type:Sequelize.STRING
+    },
+    age:{
+        type:Sequelize.INTEGER
+    },
+    noteBac:{
+        type:Sequelize.FLOAT
+    },
+    noteS1:{
+        type:Sequelize.FLOAT
+    },
+    noteS2:{
+        type:Sequelize.FLOAT
+    },
+    noteS3:{
+        type:Sequelize.FLOAT
+    },
+    noteS4:{
+        type:Sequelize.FLOAT
+    },
+    redoublement1er:{
+        type:Sequelize.BOOLEAN
+    },
+    redoublement2eme:{
+        type:Sequelize.BOOLEAN
+    },
+    preselection:{
+        type:Sequelize.BOOLEAN
+    },
+    admis:{
+        type:Sequelize.BOOLEAN
+    },
+    filiere:{
+        type:Sequelize.STRING
+    },
+    annee:{
+        type:Sequelize.INTEGER
+    }
+})
